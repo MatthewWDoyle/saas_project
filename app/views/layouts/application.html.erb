@@ -3,7 +3,8 @@
   <head>
     <title>MDProjects</title>
     <%= csrf_meta_tags %>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -14,7 +15,7 @@
   <body>
 
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class='container'>
+      <div class='container-fluid'>
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -36,7 +37,7 @@
       </div>
     </nav>
 
-      <div class= "container">
+      <div class= "container-fluid">
         <% flash.each do |type, msg| %>
           <%= content_tag :div, msg, class: "alert alert-#{type}" %>
         <% end %> 
